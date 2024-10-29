@@ -44,7 +44,7 @@ const CustomerList: React.FC = () => {
     {
       headerName: "Actions",
       field: "id",
-      cellRenderer: (params: any) => {
+      cellRenderer: (params: { value: any; }) => {
         return (
           <Link href={`/pages/customer/customer/${params.value}`}>
             <button>Edit</button>

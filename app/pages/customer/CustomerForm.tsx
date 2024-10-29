@@ -35,7 +35,8 @@ const CustomerForm: React.FC<CustomerProps> = ({ userData }) => {
           )?.reset();
         }
       } catch (err) {
-        alert("Error in the data insertion");
+        alert("Error in the data insertion ");
+        console.log(err);
       }
     }
   };
